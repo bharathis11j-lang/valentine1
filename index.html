@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    width: 340px;
+    animation: fadeIn 1.5s ease;
+}
+
+h1 {
+    color: #673ab7;
+    font-size: 32px;
+    animation: heartbeat 1.4s infinite;
+}
+
+p {
+    font-size: 17px;
+    color: #555;
+    opacity: 0;
+    animation: textFade 2s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.06); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.06); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>I’m Sorry 😔</h1>
+    <p>I didn’t mean to hurt you.<br>
+       If I could change it, I would.</p>
+</div>
+
+</body>
+</html>
